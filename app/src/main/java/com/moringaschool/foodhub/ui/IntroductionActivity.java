@@ -7,8 +7,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +25,7 @@ public class IntroductionActivity extends AppCompatActivity {
     private static  final int NUM_PAGES = 3;
     private ViewPager  viewPager;
     private ScreenSlidePagerAdapter pagerAdapter;
+    Animation anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,10 @@ public class IntroductionActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.pager);
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
+
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.o_anim);
+        viewPager.startAnimation(anim);
 
         splashImage.animate().translationY(-2400).setDuration(1000).setStartDelay(4000);
         logo.animate().translationY(1800).setDuration(1000).setStartDelay(4000);
