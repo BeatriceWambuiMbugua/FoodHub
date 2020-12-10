@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FoodHub</string>
+    <string name="skip">Skip</string>
+    <string name="with_every_bite_you_experience_a_new_world">With Every Bite, You Experience A New World</string>
+    <string name="the_most_memorable_rest_time_starts_here">The most memorable rest time starts here.</string>
 </resources>

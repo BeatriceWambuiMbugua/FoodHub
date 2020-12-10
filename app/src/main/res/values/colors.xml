@@ -10,6 +10,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="pink">#f469a9</color>
-    <color name="purple">#ba53de</color>
+    <color name="purple">#401450</color>
+    <color name="yellow">#FFEB3B</color>
     <color name="blue">#88bef5</color>
 </resources>
