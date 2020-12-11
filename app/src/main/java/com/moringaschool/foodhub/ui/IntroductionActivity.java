@@ -64,14 +64,14 @@ public class IntroductionActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch(position){
                 case 0:
-                    OnBoardingFragment1 tab1 = new OnBoardingFragment1();
-                    return tab1;
+                    OnBoardingFragment1 onboardingFragment1 = new OnBoardingFragment1();
+                    return onboardingFragment1;
                     case 1:
-                    OnBoardingFragment2 tab2 = new OnBoardingFragment2();
-                    return tab2;
+                    OnBoardingFragment2 onboardingFragment2 = new OnBoardingFragment2();
+                    return onboardingFragment2;
                     case 2:
-                    OnBoardingFragment3 tab3 = new OnBoardingFragment3();
-                    return tab3;
+                    OnBoardingFragment3 onboardingFragment3 = new OnBoardingFragment3();
+                    return onboardingFragment3;
             }
             return null;
         }

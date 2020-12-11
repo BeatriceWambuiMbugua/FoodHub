@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.moringaschool.foodhub.R;
 import com.moringaschool.foodhub.login.LoginActivity;
+import com.moringaschool.foodhub.login.SignUp;
 
 public class OnBoardingFragment3 extends Fragment {
 
@@ -22,12 +23,9 @@ public class OnBoardingFragment3 extends Fragment {
 
         fab = root.findViewById(R.id.fab);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intent);
-            }
+        fab.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), LoginActivity.class);
+            startActivity(intent);
         });
         return root;
     }
